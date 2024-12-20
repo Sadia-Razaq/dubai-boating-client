@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@300;400;600;700&display=swap');
+
+:root {
+  --primary-blue: #007bff;
+  --primary-dark: #333333;
+  
+  --secondary-light-gray: #f8f9fa;
+  --secondary-medium-gray: #e9ecef;
+  --secondary-dark-gray: #6c757d;
+  
+  --white: #ffffff;
+  --success-green: #28a745;
+  --warning-yellow: #ffc107;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  color: var(--primary-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-primary {
+  color: var(--primary-blue);
+}
+
+.bg-light {
+  background-color: var(--secondary-light-gray);
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* listing card */
+
+.listing-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-image-container {
+  position: relative;
+}
+
+.listing-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.image-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+.premium-badge {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: #ffc107;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.listing-info {
+  margin-top: 10px;
+}
+
+.listing-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.additional-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.location {
+  font-size: 14px;
+  color: #666;
+}
+
+/* buy sell boats css */
+
+.buy-sell-boats {
+  padding: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.listings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
